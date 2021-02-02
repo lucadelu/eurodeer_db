@@ -95,7 +95,7 @@ The project started in December 2018. More information will be added soon.
 
 The main goal of EURODEER project is to join and harmonize roe deer tracking data and additional information from different research groups located in different European countries in a common data repository. To achieve this goal, we set up a software platform that enables all partners to access, manage and analyze the shared data in a cost-effective fashion. The main requirements of the project and the assessment of possible solutions are described in the paper [Wildlife tracking data management: a new vision ](http://rstb.royalsocietypublishing.org/content/365/1550/2177)(Urbano et al., 2013).
 
-The result is a software platform based on a relational database management system with a spatial extension, built on the open source software [PostgreSQL](www.postgresql.org) (at 2017, version 9.5) and [PostGIS](www.postgis.org) (at 2017, version 2.3). It also includes the extension [Pl/R](https://github.com/postgres-plr/plr) that allows the integration of R tools into the database. The EURODEER database is physically installed on a server at Edmund Mach Foundation, but it is accessible from everywhere in the world (by users with registered account). It works as a centralized server that sends data, when requested, to client applications. A client is a software that accesses the remote service (database) on another computer system (server), by way of a network; the client application can be located anywhere and multiple connections to the database can be managed at the same time. Example of client applications are those used to manage the data (e.g., pgAdmin, phpPgAdmin), visualize spatial information (e.g., QGIS, ArcGIS) or perform analysis (e.g., R).
+The result is a software platform based on a relational database management system with a spatial extension, built on the open source software [PostgreSQL](www.postgresql.org) (at 2021, version 12.5) and [PostGIS](www.postgis.org) (at 2021, version 3.0). The EURODEER database is physically installed on a server at Edmund Mach Foundation, but it is accessible from everywhere in the world (by users with registered account). It works as a centralized server that sends data, when requested, to client applications. A client is a software that accesses the remote service (database) on another computer system (server), by way of a network; the client application can be located anywhere and multiple connections to the database can be managed at the same time. Example of client applications are those used to manage the data (e.g., pgAdmin, phpPgAdmin), visualize spatial information (e.g., QGIS, ArcGIS) or perform analysis (e.g., R).
 
 The server-client structure of the system offers the opportunity to build a very flexible and modular software platform, as any software able to connect to the central database can be integrated. Storing, managing, accessing and analysing GPS data from several research groups throughout Europe is thus possible, while each researcher can use its favourite software application, preserving the consistency of the data and avoiding data duplication with connected risk of errors. The most used applications to interact with the EURODEER database are Desktop GIS, statistics and Web tools, as well as office suites. 
 
@@ -111,11 +111,11 @@ For more advanced operations, some (even minimal) knowledge of SQL is needed. It
 * [w3resource](https://w3resource.com/PostgreSQL/tutorial.php)
 * [sqlbolt](https://sqlbolt.com/)
 * [webcheatsheet](http://webcheatsheet.com/sql/interactive_sql_tutorial/)
-* [www.sql.org](www.sql.org)
+* [www.sql.org](http://www.sql.org)
 
 An introduction to PostGIS (the spatial extention of PostgreSQL) give a look here:
 
-* [PostGIS into by BoundlessGeo](http://workshops.boundlessgeo.com/postgis-intro/)
+* [PostGIS intro tutorial](https://postgis.net/workshops/postgis-intro/)
 
 In addition, for they who want to understand the technicalities of (or replicate the) EURODEER database structure and tools or to get more skills on data management for wildlife tracking data, we suggest the book [Spatial Database for GPS Wildlife Tracking Data- A Practical Guide to Creating a Data Management System with PostgreSQL/PostGIS and R](https://www.springer.com/us/book/9783319037424) (Urbano & Cagnacci Ed., 2014). You can find a digital version of the chapters of the book in the [EURODEER documents repository](http://eurodeer.org/internal-documents/) (for EURODEER partners).
 
